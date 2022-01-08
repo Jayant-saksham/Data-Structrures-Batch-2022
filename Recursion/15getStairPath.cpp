@@ -10,7 +10,6 @@ vector<string> get_stair_path(int n) {
         vector<string> base;
         return base;
     }
-    cout<<n<<endl;
     vector<string> path1 = get_stair_path(n-1);
     vector<string> path2 = get_stair_path(n-2);    
     vector<string> path3 = get_stair_path(n-3); 
