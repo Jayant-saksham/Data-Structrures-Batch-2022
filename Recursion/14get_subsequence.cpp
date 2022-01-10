@@ -13,7 +13,7 @@ vector<string> get_subsequence(string s) {
     for(int i=0;i<smallAns.size();i++) {
         string add = ch + smallAns[i];
         ans.push_back(add);
-        ans.push_back(smallAns[i]);
+        ans.push_back(smallAns[i] + "");
     }
     return ans;
 } 
