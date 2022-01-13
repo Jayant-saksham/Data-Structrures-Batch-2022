@@ -6,21 +6,21 @@ vector<string> get_maze_path(int n, int m, int i, int j) {
         base.push_back("");
         return base;
     }
+
     vector<string> ans;
-    if(i<n) {
-        vector<string> ans1 = get_maze_path(n, m, i+1, j);
-        for(string path : ans1) {
-            string add = "v" + path;
-            ans.push_back(add);
-        }
-    }   
-    if(j<m) {
-        vector<string> ans2 = get_maze_path(n, m, i, j+1);
-        for(string path : ans2) {
-            string add = "h" + path;
-            ans.push_back(add);
-        }
+    if(j < m) {
+        vector<string> ans1 = get_maze_path(n, m, i, j+1);
+        for(string str : ans1) {
+            ans.push_back("h" + str);
+        }   
     } 
+    if(i < n) {
+        vector<string> ans2 = get_maze_path(n, m, i+1, j);
+        for(string str : ans2) {
+            ans.push_back("v" + str);
+        }
+    }
+    
     return ans;
 }
 int main() {

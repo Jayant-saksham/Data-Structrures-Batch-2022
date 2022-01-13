@@ -15,7 +15,8 @@ void print_keypad_combination(string s,string ans, string codes[]) {
 int main() {
     string s;
     cin>>s;
-    string codes[] = {
+    string codes[] = 
+    {
         ".;",
         "abc", 
         "def",

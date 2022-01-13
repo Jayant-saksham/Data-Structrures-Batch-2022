@@ -8,14 +8,13 @@ vector<string> get_keypad(string s, string codes[]) {
     }
     char ch = s[0];
     string rem = s.substr(1);
-    vector<string> smallAns = get_keypad(rem, codes); 
-    string target = codes[ch - '0'];
+    vector<string> smallAns = get_keypad(rem, codes);
     vector<string> ans;
+    string target = codes[ch - '0'];
     for(int i=0;i<target.size();i++) {
         char x = target[i];
         for(string str : smallAns) {
-            string add = x + str; 
-            ans.push_back(add);           
+            ans.push_back(x + str);
         }
     }
     return ans;

@@ -10,10 +10,9 @@ vector<string> get_subsequence(string s) {
     string rem = s.substr(1);
     vector<string> smallAns = get_subsequence(rem);
     vector<string> ans;
-    for(int i=0;i<smallAns.size();i++) {
-        string add = ch + smallAns[i];
-        ans.push_back(add);
-        ans.push_back(smallAns[i] + "");
+    for(string str : smallAns) {
+        ans.push_back(ch + str);
+        ans.push_back("" + str);
     }
     return ans;
 } 
@@ -21,8 +20,8 @@ int main() {
     string s;
     cin>>s;
     vector<string> v = get_subsequence(s);
-    for(int i=0;i<v.size();i++) {
-        cout<<v[i]<<endl;
+    for(string str : v) {
+        cout<<str<<endl;
     }
     return 0;
 }
