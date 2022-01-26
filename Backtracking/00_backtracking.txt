@@ -1,0 +1,7 @@
+Backtracking 
+1. Place yourself at the start point 
+2. From that starting point, explore all the paths possible 
+3. Insert your element at only correct position.
+4. Move to smaller problem. Once you reach the base case. print your solution 
+5. Undo the start point and change your starting point 
+
