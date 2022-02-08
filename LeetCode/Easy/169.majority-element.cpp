@@ -1,0 +1,29 @@
+/*
+ * @lc app=leetcode id=169 lang=cpp
+ *
+ * [169] Majority Element
+ */
+
+// @lc code=start
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int n = nums.size();
+        int count = 0;
+        int candidate = 0;
+        for(int num : nums) {
+            if(count == 0) {
+                candidate = num;
+            }
+            if(num == candidate) {
+                count+=1;
+            }
+            else {
+                count -= 1;
+            }
+        }
+        return candidate;
+    }
+};
+// @lc code=end
+
