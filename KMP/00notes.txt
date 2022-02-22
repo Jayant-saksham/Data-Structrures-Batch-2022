@@ -1,0 +1,2 @@
+Knuth-Morris and Pratt introduce a linear time algorithm for the string matching problem.
+
