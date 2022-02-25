@@ -26,8 +26,8 @@ vector<int> pie_table(string s) {
 int main() {
     string s = "ababaca";
     vector<int> PIE = pie_table(s);
-    for(int i : PIE) {
-        cout<<i<<endl;
+    for(int i=0;i<PIE.size();i++) {
+        cout<<PIE[i]<<" ";
     }
     return 0;
 }
