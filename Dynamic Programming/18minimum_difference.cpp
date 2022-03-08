@@ -36,6 +36,9 @@ int minDifference(int A[], int n) {
 }
 
 int main() {
+    int arr[] = { 3, 1, 4, 2, 2, 1 };
+    int n = sizeof(arr) / sizeof(arr[0]);
+    cout<<minDifference(arr, n);
     
     return 0;
 }
