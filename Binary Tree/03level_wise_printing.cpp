@@ -31,11 +31,10 @@ void print_level_wise(struct node *root) {
     }
 }
 
-
 struct node *takeInput() {
     int rootData;
     cin>>rootData;
-    if(rootData==-1) {
+    if(rootData == -1) {
         return NULL;
     }
     struct node *root = createNode(rootData);
