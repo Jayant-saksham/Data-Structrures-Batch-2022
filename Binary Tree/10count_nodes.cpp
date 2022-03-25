@@ -11,7 +11,7 @@ int countNodes(struct node *root) {
     }
     return (1 + countNodes(root->left) + countNodes(root->right));
 }
-int main(){
+int main() {
     
     return 0;
 }
