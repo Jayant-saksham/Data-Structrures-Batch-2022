@@ -24,6 +24,5 @@ vector<int> graphPrint(int V, vector<int> adj[]) {
     return ans;
 }
 int main() {
-    
     return 0;
 }
