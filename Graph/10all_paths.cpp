@@ -18,6 +18,5 @@ public:
         vector<int> path;
         dfs(graph, ans, path, 0);
         return ans;
-        
     }
 };
